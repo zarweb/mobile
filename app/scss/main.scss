@@ -7,7 +7,8 @@
 // global styles
 body {
   font-family: open sans, arial;
-
+  overflow-x: hidden;
+  
   ::placeholder {
     font-family: open sans, arial;
     color: #b3b3b3;
