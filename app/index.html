@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Outfit Creator V2</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+
+<!-- header-->
+<header>
+    <div class="save">
+        <button><img src="img/header/save.png" alt="save"></button>
+    </div>
+</header>
+
+<!--content-->
+<main id="main-wrapp">
+    <div class="contents">
+        <section class="drop-wrapp">
+            <div id="drop"></div>
+        </section>
+        <section class="navigation">
+
+            <!--menu for changes-->
+            <div class="menu">
+                <ul>
+                    <li class="forward">
+                        <button><img src="img/menu/forward.png" alt="forward">forward</button>
+                    </li>
+                    <li class="back">
+                        <button><img src="img/menu/back.png" alt="back">back</button>
+                    </li>
+                    <li class="clone">
+                        <button><img src="img/menu/clone.png" alt="clone">clone</button>
+                    </li>
+                    <li class="flip">
+                        <button><img src="img/menu/flip.png" alt="flip">flip</button>
+                    </li>
+                    <li class="remove">
+                        <button><img src="img/menu/remove.png" alt="remove">remove</button>
+                    </li>
+                    <li class="info">
+                        <button id="myBtn"><img src="img/menu/info.png" alt="info">info</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-wrapp">
+
+                <!-- tabs-nav -->
+                <nav>
+                    <div class="tabs">
+                        <ul>
+                            <li class="active-link"><a href="#tab1">Empfohlene Artikel</a></li>
+                            <li><a href="#tab2">Kategorien</a></li>
+                            <li><a href="#tab3">Formen</a></li>
+                            <li><a href="#tab4">Text</a></li>
+                        </ul>
+                        <div class="search">
+                            <div class="inp-group">
+                                <input type="text" name="search" placeholder="Artikel, Marken oder Outfits suchen">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- tabs-content -->
+                <div id="tabs-content">
+                    <div id="tab1" class="content">
+                        <section class="product">
+                            <div id="products">
+
+                            </div>
+                        </section>
+                    </div>
+                    <div id="tab2" class="content">
+                        <section class="categories">
+                            <div id="category">
+                                <ul class="category-list">
+                                    <li class="categ-item" data-category-name="Sportbekleidung">
+                                        <button>Sportbekleidung</button>
+                                    </li>
+                                    <li class="categ-item" data-category-name="accessoires">
+                                        <button>accessoires</button>
+                                    </li>
+                                    <li class="categ-item" data-category-name="jeans">
+                                        <button>jeans</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="tab3" class="content">
+                        <h2>Formen</h2>
+
+                    </div>
+                    <div id="tab4" class="content">
+                        <h2>Text</h2>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</main>
+
+<!--modal preview-->
+<div id="preview-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="preview-product"></div>
+
+    </div>
+</div>
+<!--modal preview end-->
+
+<!--save modal-->
+<div id="save-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="save-product">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" name="" placeholder="Gib deinem Outfit einen Namen:">
+                    <input type="text" name="" placeholder="Beschreibe dein Outfit">
+                </div>
+
+                <div class="select-group">
+                    <p>Zu welchem Anlass passt dein Outift:</p>
+                    <select name="">
+                        <option value="">Choose Outfit Category</option>
+                        <option value="">Choose Outfit Category</option>
+                    </select>
+                </div>
+
+                <div class="select-group">
+                    <p>Outfit Contest(Optional):</p>
+                    <select name="">
+                        <option value="">Choose Outfit Category</option>
+                        <option value="">Choose Outfit Category</option>
+                    </select>
+                </div>
+                <div class="button-box">
+                    <button>Outfit Speichern</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--modal preview end-->
+
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

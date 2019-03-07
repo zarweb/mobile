@@ -1,0 +1,57 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+// ≥768px
+@media only screen and (max-width: 768px) {
+  main#main-wrapp {
+    .contents {
+      width: 100%;
+      box-shadow: none;
+    }
+  }
+
+}
+// ≥576px
+@media only screen and (max-width: 576px) {
+  main#main-wrapp {
+    .navigation {
+      .nav-wrapp {
+        //padding: 20px 10px;
+
+        nav {
+          ul {
+            li {
+
+              display: inline-block;
+              margin-right: 4px;
+
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ≥480px
+@media only screen and (max-width: 480px) {
+  main#main-wrapp {
+    .navigation {
+      .menu {
+        ul {
+          li {
+            button {
+              font-size: 14px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*==========  Mobile First  ==========*/
